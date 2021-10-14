@@ -1,0 +1,35 @@
+<html>
+<title>Ternary Operators</title>
+
+<body>
+    <h1 style="color:black;">USAGE OF CONDITIONAL TERNARY OPERATORS IN A PARTICULAR PROGRAM</h1>
+    <h2 style="color: red;">"Q: JavaScript Program to calculate the values of AREA & PERIMETER and find which value is
+        greater to each other."</h2>
+    <input type="text" value="" id="a" />
+    <br>
+    <input type="text" value="" id="b" />
+
+    <div class="app-form-group shhowdata">
+        <p id="showData"> </p>
+    </div>
+
+    <script>
+        function ABC(a, b) {
+            let length = parseInt(a);
+            let breadth = parseInt(b);
+            let area = (length * breadth);
+            let peri = (2 * length) + (2 * breadth);
+            ((area < peri) ? alert("The Perimeter is greater than Area and the value of Perimeter is " + peri) : (area > peri) ? alert("The Area is greater than Perimeter and the value of Area is " + area) : alert("Both are equal to each other and the value is " + area));
+
+            (length > 0 && breadth > 0) ? document.getElementById('showData').innerHTML = ` The value of AREA is ${area}. < br > The value of PERIMETER is ${perimeter}. ` : document.getElementById('showData').innerHTML = ` Something Went Wrong Dude! `;
+        }
+
+    </script>
+
+    <input type="button" name="Button" value="Let's Go!"
+        onclick='ABC(document.getElementById("a").value,document.getElementById("b").value)' />
+
+
+</body>
+
+</html>
